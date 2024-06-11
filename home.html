@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="assets\Avatar.jpg">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="intro"> HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#certifications">CERTIFICATIONS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="introbox">
+            <section class="intro">
+                <div class="avatar">
+                    <img src="assets/Avatar.jpg" alt="">
+                </div>
+                <p>I am Akhil Swarop.
+                    Welcome to my portfolio.
+                </p>
+                <div class="buttons">
+                    <button class="contact" onclick="scrollToSection('contact')">Get in touch</button>
+                    <button>Download CV</button>
+                </div>
+        </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="column">
+                    <h2> About me</h2>
+                </div>
+                <div class="column">
+                    <p>Proactive Computer Science student at Amrita Vishwa Vidyapeetham with over 2 years of hands-on
+                        experience in computer vision, AR/VR, and embedded systems. Developed an AR anatomy application
+                        and a handwritten character recognition system, enhancing user interaction and model deployment
+                        efficiency. Certified in AR games, satellite imagery disaster risk monitoring, and responsive
+                        web design. Seeking internships to apply academic knowledge and deliver intuitive, impactful
+                        solutions. </p>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="container">
+                <div class="column">
+                    <h2> Projects</h2>
+                </div>
+                <div class="column">
+                    <div class="project">
+                        <h3>AR Anatomy </h3>
+                        <ul>
+                            <li>Developed an interactive augmented reality anatomy application using Vuforia SDK.</li>
+                            <li>Implemented marker-based detection for accurate model overlay on real-world objects.
+                            </li>
+                            <li>Designed user interaction to explode models, revealing labeled subcomponents.</li>
+                            <li>Demonstrates strong understanding of AR principles, 3D modeling, and user interface
+                                design.</li>
+                            <li><button>Check it out</button></li>
+                        </ul>
+                    </div>
+
+                    <div class="project">
+                        <h3>Lab Booking System </h3>
+                        <ul>
+                            <li>MERN stack development (MongoDB, Express.js, React, Node.js)</li>
+                            <li>Built laboratory booking system with:</li>
+                            <li>Type, date, and time slot selection</li>
+                            <li>Real-time seat blocking for efficient resource management</li>
+                            <li>Dynamic seat availability management (prevents overbooking)</li>
+                            <li>Secure data storage with JSON in MongoDB</li>
+                            <li>RESTful API communication with Express.js</li>
+                            <li>Server-side logic and client synchronization with Node.js backend</li>
+                            <li>Ensured data integrity and consistency across concurrent users</li>
+                            <li><button>Check it out</button></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="project">
+                        <h3>Character Classifier using Raspberry Pi Pico</h3>
+                        <ul>
+                            <li>MERN stack development (MongoDB, Express.js, React, Node.js)</li>
+                            <li>Built laboratory booking system with:</li>
+                            <li>Type, date, and time slot selection</li>
+                            <li>Real-time seat blocking for efficient resource management</li>
+                            <li>Dynamic seat availability management (prevents overbooking)</li>
+                            <li>Secure data storage with JSON in MongoDB</li>
+                            <li>RESTful API communication with Express.js</li>
+                            <li>Server-side logic and client synchronization with Node.js backend</li>
+                            <li>Ensured data integrity and consistency across concurrent users</li>
+                            <li><button>Check it out</button></li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+        </section>
+        <section id="certifications">
+            <div class="container">
+                <div class="column">
+                    <h2> Certifications</h2>
+                </div>
+                <div class="column">
+                    <h3> Coursera</h3>
+                    <ul>
+                        <li>Meta AR Developer </li>
+                        <li>Meta Full Stack Developer</li>
+                    </ul>
+                    <h3> freeCodeCamp</h3>
+                    <ul>
+                        <li>Responsive Web Design Certification</li>
+                        <li>Front End Development Libraries Certiciation</li>
+                        <li>Javascript Algorithms and Data Structures Certification</li>
+                    </ul>
+                    <h3>nvidia</h3>
+                    <ul>
+                        <li>Disaster Risk Monitoring Using Satellite Imagery</li>
+                    </ul>
+                    <h3>Kaggle</h3>
+                    <ul>
+                        <li>Intro to Machine Learning</li>
+                        <li>Intro to Deep Learning</li>
+                        <li>Pandas</li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="contact-card">
+                <h2>Contact Me</h2>
+                <div class="socials">
+                    <a target="_blank" href="https://www.linkedin.com/in/akhil-swarop-a5ba91185/"><img
+                            src="assets\icons\104493_linkedin_icon.png" alt=""></a>
+                    <a href="https://github.com/akhilswarop"><img src="assets\icons\211904_social_github_icon.png"
+                            alt=""></a>
+                    <a href="mailto:akhiltheswarop@gmail.com"><img src="assets\icons\8666723_mail_icon.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+
+        }
+    </script>
+</body>
+
+</html>
