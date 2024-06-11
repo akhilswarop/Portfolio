@@ -36,7 +36,7 @@ a {
 
 
 .intro {
-    margin-top: 13%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
