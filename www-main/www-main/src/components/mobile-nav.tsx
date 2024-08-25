@@ -10,7 +10,6 @@ import { Button } from './ui/button'
 import { ScrollArea } from './ui/scroll-area'
 import Logo from './logo'
 import { ny } from '@/lib/utils'
-import { components } from './navigation'
 
 export function MobileNav() {
    const [open, setOpen] = React.useState(false)

@@ -1,59 +1,41 @@
-
-import React from 'react';
-import { Container, Typography, Grid, Card, CardContent, CardMedia } from '@mui/material';
-const certifications = [
-  {
-    title: 'AWS Certified Solutions Architect',
-    issuer: 'Amazon Web Services',
-    date: 'May 2023',
-    image: '/images/aws-certified-solutions-architect.png',
-  },
-  {
-    title: 'Microsoft Certified: Azure Developer Associate',
-    issuer: 'Microsoft',
-    date: 'July 2023',
-    image: '/images/azure-developer-associate.png',
-  },
-  {
-    title: 'Google Cloud Professional Cloud Architect',
-    issuer: 'Google Cloud',
-    date: 'September 2023',
-    image: '/images/google-cloud-architect.png',
-  },
-  // Add more certifications as needed
-];
-
-export default function Certifications() {
+import { Navigation } from "@/components/navigation";
+import {certificates } from "@/lib/certificates";
+import Link from "next/link";
+import Image from "next/image";
+export default function ReleaseNotes() {
   return (
-    <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-      <Typography variant="h2" component="h1" gutterBottom>
-        My Certifications
-      </Typography>
-      <Grid container spacing={4}>
-        {certifications.map((cert, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card>
-              <CardMedia
-                component="img"
-                height="140"
-                image={cert.image}
-                alt={cert.title}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {cert.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Issued by: {cert.issuer}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Date: {cert.date}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
-  );
+    <main className="flex min-h-screen flex-col items-center justify-start">
+      <div className="min-h-screen py-42 flex justify-center flex-col">
+        <h1 className="text-4xl text-center font-bold mt-24">Certificates</h1>
+        <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
+          {certificates.map((certificate) => (
+            <Link href={certificate.link} target="_blank" className="bg-background relative max-w-64 overflow-hidden rounded-lg border p-5 hover:border-blue-500 transition-all duration-300 hover:-translate-y-1 hover:-translate-x-1" >
+              <div className="text-md font-medium mb-5">
+                {certificate.name}
+              </div>
+              <Image 
+  src={certificate.issuer}
+  alt="Issuer Logo"
+  height={30}
+  width={30}
+/>
+
+              {certificate.completed ? (
+  <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-medium p-1 rounded-bl-lg">
+    Completed
+  </div>
+) : (
+  <div className="absolute top-0 right-0 bg-orange-500 text-white text-xs font-medium p-1 rounded-bl-lg">
+    Ongoing
+  </div>
+)}
+
+              
+            </Link>
+          ))}
+        </div>
+      </div>
+      <Navigation /> 
+    </main>
+  )
 }

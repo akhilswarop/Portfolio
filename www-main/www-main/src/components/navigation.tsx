@@ -19,34 +19,6 @@ import { MobileNav } from "./mobile-nav"
 import { HeartIcon } from "lucide-react"
 import { HeartFilledIcon } from "@radix-ui/react-icons"
  
-export const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "Privacy Policy",
-    href: "/privacy-policy",
-    description: "Learn how we handle your data. Don't worry, we don't collect anything!",
-  },
-  {
-    title: "Discord",
-    href: "https://discord.gg/nnShMQzR4b",
-    description: "Join our Discord server to chat with the community."
-  },
-  {
-    title: "Source Code",
-    href: "https://github.com/zen-browser",
-    description: "Check out our source code on GitHub and leave a star!"
-  },
-  {
-    title: "Branding Assets",
-    href: "/branding-assets",
-    description: "Download Zen Browser branding assets for your website or project."
-  },
-  {
-    title: "Documentation",
-    href: "https://docs.zen-browser.app/",
-    description: "Learn how to use Zen Browser and build your own themes."
-  }
-]
- 
 export function Navigation() {
   return (
     <div className="bg-background z-40 top-0 left-0 w-full flex fixed border-b border-grey p-2 items-center justify-center">
@@ -58,7 +30,7 @@ export function Navigation() {
               <Logo withText />
             </NavigationMenuLink>
           </NavigationMenuItem>
-        <NavigationMenuLink href = "/release-notes">
+        <NavigationMenuLink href = "/certifications">
           <NavigationMenuItem>
             Certifications
           </NavigationMenuItem>
@@ -68,9 +40,12 @@ export function Navigation() {
               <span className="ml-2">Projects</span>
           </NavigationMenuItem>
           </NavigationMenuLink>
-          <NavigationMenuItem>
-            Contact Me
-          </NavigationMenuItem>
+          <NavigationMenuLink href="/contact-me">
+  <NavigationMenuItem>
+    Contact Me
+  </NavigationMenuItem>
+</NavigationMenuLink>
+
           <ModeToggle />
         </NavigationMenuList>
       </NavigationMenu>
