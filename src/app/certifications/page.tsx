@@ -9,7 +9,7 @@ export default function ReleaseNotes() {
         <h1 className="text-4xl text-center font-bold mt-24">Certificates</h1>
         <div className="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
           {certificates.map((certificate) => (
-            <Link href={certificate.link} target="_blank" className="bg-background relative max-w-64 overflow-hidden rounded-lg border p-5 hover:border-blue-500 transition-all duration-300 hover:-translate-y-1 hover:-translate-x-1" >
+            <Link key ={certificate.name} href={certificate.link} target="_blank" className="bg-background relative max-w-64 overflow-hidden rounded-lg border p-5 hover:border-blue-500 transition-all duration-300 hover:-translate-y-1 hover:-translate-x-1" >
               <div className="text-md font-medium mb-5">
                 {certificate.name}
               </div>
