@@ -52,14 +52,14 @@ A passionate software developer,          <br className="hidden md:block" /> loo
               width={1500}
               height={700}
               src="/browser-dark.png"
-              alt="browser Image"
+              alt="code Image"
               className="relative hidden rounded-[inherit] border object-contain dark:block"
             />
             <Image
               width={1500}
               height={700}
               src="/browser-light.png"
-              alt="browser Image"
+              alt="code Image"
               className="relative block rounded-[inherit]  border object-contain dark:hidden"
             />
           </div>
