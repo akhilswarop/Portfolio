@@ -1,5 +1,5 @@
 
-export interface ReleaseNote {
+export interface Project {
   name: string;
   description: string;
   completed: boolean;
@@ -7,7 +7,7 @@ export interface ReleaseNote {
 
 }
 
-export const releaseNotes: ReleaseNote[] = [
+export const projects: Project[] = [
   {
     name: "AR Anatomy",
     description: "Visualize the human body with AR",

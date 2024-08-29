@@ -35,7 +35,7 @@ export function Navigation() {
             Certifications
           </NavigationMenuItem>
           </NavigationMenuLink>
-          <NavigationMenuLink href = "/release-notes">
+          <NavigationMenuLink href = "/projects">
           <NavigationMenuItem>
               <span className="ml-2">Projects</span>
           </NavigationMenuItem>
