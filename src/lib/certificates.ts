@@ -14,16 +14,16 @@ export interface Certicate {
       completed: true,
       link: "https://courses.nvidia.com/certificates/e455e0ff8c9040cfb054088d26019658/"
     },
-    // {
-    //   name: "Intro to Deep Learning",
-    //   issuer: "Connect with celebrities and influencers with our app",
-    //   completed: false,
-    //   link: "https://www.kaggle.com/learn/certification/akhilswarop/intro-to-deep-learning"
-    // },
-    // {
-    //   name: "Pandas",
-    //   issuer: "Connect with celebrities and influencers with our app",
-    //   completed: false,
-    //   link: "https://github.com/akhilswarop/Hanuvem"
-    // },
+    {
+      name: "Intro to Deep Learning",
+      issuer: "/logos/certificate_logos/kaggle-icon.svg",
+      completed: true,
+      link: "https://www.kaggle.com/learn/certification/akhilswarop/intro-to-deep-learning"
+    },
+    {
+      name: "Pandas",
+      issuer: "/logos/certificate_logos/kaggle-icon.svg",
+      completed: true,
+      link: "https://www.kaggle.com/learn/certification/akhilswarop/pandas"
+    },
   ];
